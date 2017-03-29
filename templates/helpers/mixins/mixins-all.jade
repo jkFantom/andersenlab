@@ -1,0 +1,15 @@
+//- menu-base
+mixin menu(menuItems, className)
+	ul()&attributes({'class': className})
+		each menuItem, index in menuItems
+			li
+				+menuLinks(menuItem)
+				if menuItem.child
+					ul
+						each menuSubItem in menuItem.child
+							li
+								+menuLinks(menuSubItem)
+								
+mixin menuLinks(item)
+	a(href='#')= item.title
+

@@ -1,0 +1,16 @@
+mixin company(options)
+	.company
+		.company__portrait&attributes({
+			'style': 'background-image: url(img/' + options.bg + '.jpg)'
+		})
+		.company__content
+			.company__title= options.title
+			.company__text= options.text
+			.company__footer
+				.company__time.icon-time 6 man-months
+				img.company__logo(src='img/' + options.logo + '.png')
+
+		.company__overlay
+			.company__title.company__overlay-title= options.title
+			a.button.button_text-white(href='#') View case
+				i.button__icon.icon-arrow

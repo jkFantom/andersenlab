@@ -1,0 +1,19 @@
+extends ../layouts/main-layout
+
+block header
+	.header-holder&attributes({
+		'style': 'background-image: url(img/header-holder-bg2.jpg);'
+	})
+
+		include ../partials/header
+
+		+intro({
+			bgPath: 'img/intro2-bg.jpg',
+			title: 'Need slogan about technologies',
+			text: 'Small description for tec'
+		})
+
+main.content
+	include ../blocks/technologies
+
+	include ../blocks/categories

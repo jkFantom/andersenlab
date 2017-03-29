@@ -1,0 +1,26 @@
+extends ../layouts/main-layout
+
+
+block header
+	.header-holder&attributes({
+		'style': 'background-image: url(img/header-holder-bg1.jpg);'
+	})
+
+		include ../partials/header
+
+		+intro({
+			title: 'Best talents among top technologies',
+			text: 'Andersen, software for business'
+		})
+
+block content
+	main.content
+		.box
+			include ../blocks/features
+
+		include ../blocks/companies
+
+		.box
+			include ../blocks/about-box
+
+			include ../blocks/become

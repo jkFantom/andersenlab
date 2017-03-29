@@ -1,0 +1,47 @@
+.companies
+  .companies__box.box
+    .companies__columns
+      .companies__column
+        .title.title_border_left Top companies rely<br> Andersen
+
+        +company({
+          bg: 'company1-bg',
+          title: 'Mercedes Me',
+          text: 'Helping people to choose the car of their dreams.',
+          logo: 'company1-logo'
+        })
+
+        +company({
+          bg: 'company2-bg',
+          title: 'MTC',
+          text: 'Enabling an eco-friendly lifestyle.',
+          logo: 'company2-logo'
+        })
+
+        +company({
+          bg: 'company3-bg',
+          title: 'Amida Care',
+          text: 'Making insurance fast, smooth, and transparent.',
+          logo: 'company3-logo'
+        })
+
+      .companies__column
+        include ../blocks/projects-category
+
+        +company({
+          bg: 'company4-bg',
+          title: 'American Homes 4 Rent',
+          text: 'Simplifying the routine of real estate agents.',
+          logo: 'company4-logo'
+        })
+
+        +company({
+          bg: 'company5-bg',
+          title: 'IHS',
+          text: 'Speeding up electronic equipment manufacturing.',
+          logo: 'company5-logo'
+        })
+
+
+    a.button All cases
+      i.button__icon.icon-arrow

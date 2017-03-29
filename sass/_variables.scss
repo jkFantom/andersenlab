@@ -1,0 +1,33 @@
+/* fonts and colors */
+
+$font-family-base: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+$font-size-base: 18px;
+$line-height-base: 1.55;
+
+$color-text: #58595b;
+$color-brand: #fcdb04;
+$color-white: #fff;
+$color-placeholder: #9c9b9b;
+$color-gray: #f6f7f8;
+
+/* !fonts and colors */
+
+$base-dureation: .3s;
+$opacity-placeholder-focus: 0;
+
+/* mixins */
+
+@mixin font($size: $font-size-base, $height: $line-height-base, $font-family: $font-family-base) {
+  font: #{$size}/#{$height $font-family};
+}
+
+@mixin placeholder($duration: $base-dureation) {
+  transition: opacity $duration ease;
+}
+
+@mixin transition($property: all, $duration: $base-dureation, $function: ease) {
+  transition: $property $duration $function;
+}
+
+/* !mixins */
+

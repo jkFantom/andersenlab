@@ -1,0 +1,16 @@
+doctype html
+include ../helpers/mixins/mixins-all
+include ../helpers/mixins/company
+include ../helpers/mixins/intro
+
+html(lang='ru')
+	include ../partials/head
+
+	body
+		block header
+
+		block content
+
+		include ../partials/footer
+
+		include ../partials/scripts

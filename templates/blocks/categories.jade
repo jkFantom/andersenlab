@@ -1,0 +1,9 @@
+-
+  var list = ['Java', '.NET', 'PHP', 'Java Script', 'iOS', 'Android']
+
+.categories
+  each val, index in list
+    a.categories__item(href='#')
+      .categories__image-wrap
+        img.categories__image(src='img/category' + (index + 1) +'-icon.png')
+      span.categories__name= val
